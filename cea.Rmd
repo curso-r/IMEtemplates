@@ -1,0 +1,56 @@
+---
+title: "R Notebook"
+output: 
+  word_document:
+    reference_docx: "cea-reference.docx"
+---
+
+######### Resumo
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+##### Page Break
+
+# Introdução
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+# Descrição do estudo
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+# Descrição das variáveis
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+## Subtópico 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+## Subtópico 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+# Análise descritiva
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+# Análise inferencial
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
+
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
