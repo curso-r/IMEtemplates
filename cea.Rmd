@@ -1,17 +1,168 @@
 ---
-title: "R Notebook"
+title: "RAE - CEA xxPxx"
+subtitle: "RELATÓRIO DE ANÁLISE ESTATÍSTICA SOBRE O PROJETO:"
 output: 
   word_document:
     reference_docx: "cea-reference.docx"
+bibliography: bibliografia.bib
 ---
 
-######### Resumo
+```{r}
+# Numbered figures and tables
+
+library("knitr")
+library(kfigr)
+
+tn = local({
+  i = 0
+  function(x) {
+    i <<- i + 1
+    paste("<table><caption>", 'Figure ', i, ': ', x, "</caption><colgroup><col width='100'></col></colgroup><thead><tr class='header'></tr></thead><tbody></tbody></table><p>", sep = '')
+  }
+})
+
+knit_hooks$set(fig.cap = function(before, options, envir) {
+  if(!before)
+    tn(options$fig.cap)
+})
+
+default_output_hook = knit_hooks$get("output")
+
+knit_hooks$set(output = function(x, options) {
+  if (is.null(options$fig.cap) == F)  
+    x
+  else
+    default_output_hook(x,options)
+})
+
+to = local({
+  i = 0
+  function(x) {
+    i <<- i + 1
+    paste("<table><caption>", 'Table ', i, ': ', x, "</caption><colgroup><col width='100'></col></colgroup><thead><tr class='header'></tr></thead><tbody></tbody></table><p>", sep = '')
+  }
+})
+
+knit_hooks$set(tab.cap = function(before, options, envir) {
+  if(!before)
+    to(options$tab.cap)
+})
+default_output_hook = knit_hooks$get("output")
+knit_hooks$set(output = function(x, options) {
+  if (is.null(options$tab.cap) == F)  
+    x
+  else
+    default_output_hook(x,options)
+})
+
+```
+
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+#### "Nome do projeto"
+
+##### Line break
+##### 
+#####
+#####
+#####
+#####
+#####
+
+#### Professoa X
+#### Professor Y
+#### Aluno A
+#### Aluna B
+
+##### Line break
+#####
+#####
+#####
+#####
+#####
+#####
+
+#### São Paulo, xx de xx de 201x
+
+###### Page Break
+
+####### CENTRO DE ESTATÍSTICA APLICADA --- CEA --- USP
+####### RELATÓRIO DE ANÁLISE ESTATÍSTICA CÓDIGO XXPXX
+
+#####
+
+####### TÍTULO: Relatório de análise estatística sobre o projeto: "Nome do projeto"
+
+#####
+
+####### PESQUISADORA: nome da pesquisadora 
+
+#####
+
+####### INSTITUIÇÃO: nome da instituição
+
+#####
+
+####### FINALIDADE DO PROJETO: finalidade do projeto
+
+#####
+
+####### RESPONSÁVEIS PELA ANÁLISE:
+
+Professora X
+
+Professor Y
+
+Aluno A
+
+Aluna B
+
+#####
+
+####### REFERÊNCIA DESTE TRABALHO:
+
+referência deste trabalho
+
+#####
+
+####### FICHA TÉCNICA
+
+####### PROGRAMAS COMPUTACIONAIS UTILIZADOS
+
+Programa 1
+
+Programa 2
+
+Programa 3
+
+#####
+
+####### TÉCNICAS ESTATÍSTICAS UTILIZADAS
+
+Técnica 1
+
+Técnica 2
+
+Tëcnica 3
+
+#####
+
+####### ÁREA DE APLICAÇÃO
+
+Área de aplicação
+
+###### Page Break
+
+####### Resumo
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
 
-Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet. [@R-base]
 
-##### Page Break
+###### Page Break
 
 # Introdução
 
@@ -47,10 +198,24 @@ Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
 
-Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+Cras nona varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad curso-r litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+```{r, results='asis', }
+library(dplyr)
+mtcars %>% 
+  select(mpg, cyl, am) %>% 
+  slice(1:10) %>% 
+  pander::pandoc.table(
+    caption = "Título da tabela."
+  )
+```
+
 
 # Análise inferencial
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend odio et auctor volutpat. Morbi maximus velit sit amet quam pulvinar aliquam. Aliquam erat volutpat. Phasellus scelerisque velit mauris, id auctor felis iaculis ac. Aliquam porta felis nec mollis congue. In sed tortor nunc. Proin luctus tincidunt volutpat. Aenean vel pharetra mauris. Sed eu nisl accumsan, egestas ligula vestibulum, volutpat libero. Sed mattis molestie mi at pharetra. Vestibulum fermentum tellus vitae lorem commodo, vitae iaculis metus cursus. Mauris rhoncus varius finibus. Vivamus finibus consectetur justo, ut elementum nibh vehicula eu.
 
 Cras non varius libero. Vivamus ac arcu erat. Aenean vitae pulvinar lacus. Etiam ultrices, eros vitae rhoncus convallis, sapien arcu bibendum purus, ut suscipit lectus urna ac magna. Sed at consequat augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet vel tellus quis faucibus. Nulla et nibh nibh. Nunc consectetur magna eu lorem ultricies, nec venenatis velit imperdiet.
+
+######## Referências
+ 
